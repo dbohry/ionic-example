@@ -1,0 +1,17 @@
+<ion-view view-title="My Galleries">
+  <ion-content>
+    <ion-list>
+      <ion-item class="item-remove-animate item-avatar item-icon-right" 
+        ng-repeat="gallery in galleries" type="item-text-wrap" href="#/tab/galleries/{{gallery.id}}">
+        <img ng-src="{{gallery.folder}}">
+        <h2>{{gallery.title}}</h2>
+        <p>{{gallery.description}}</p>
+        <i class="icon ion-chevron-right icon-accessory"></i>
+
+        <ion-option-button class="button-assertive" ng-click="remove(gallery)">
+          Delete
+        </ion-option-button>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
