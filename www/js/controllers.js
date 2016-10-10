@@ -2,6 +2,8 @@ angular.module('starter.controllers', [])
 
 .controller('DashCtrl', function($scope) {})
 
+.controller('AboutCtrl', function($scope) {})
+
 .controller('GalleriesCtrl', function($scope, Galleries) {
   $scope.galleries = Galleries.all();
   $scope.remove = function(gallery) {
